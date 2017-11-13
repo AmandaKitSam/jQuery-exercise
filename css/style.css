@@ -7,3 +7,10 @@ h1 {
   font-size: 40px;
   text-align: center;
 }
+
+
+/*------------- 6. Text, Val & HTML Functions -------------*/
+.cool{
+  font-size: 2em;
+  color: green;
+}
