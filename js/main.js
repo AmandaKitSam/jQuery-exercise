@@ -23,63 +23,62 @@ $(document).ready(function() {
   });
 
 
+
   // ------------- 5. Event Handeling & Effects -------------
 
   // $("#box").show();
 
-  // $("#target").on("click", function() {
-  //   // $("p#statement").hide();
-  //   // $("#box").show();
-  //   // $("#box").toggle();
-  //
-  //   // $("#box").slideDown(1000); // 1 second
-  //   // $("#box").slideUp(2000); // element needs to be showns 1st
-  //   $("#box").slideToggle(1000);
-  //
-  //   // $("#box").fadeIn(1000);
-  //   // $("#box").fadeOut(1000);
-  //   // $("#box").fadeTo(1000, 0.5);
-  //   // $("#box").fadeToggle(1000);
-  // });
-  //
-  //
-  //
-  // // ------------- 6. Text, Val & HTML Functions -------------
-  // $("#btn_main").on("click", function() {
-  //   $(".dope").text("This is a new sentence.");
-  //   $("#btn_main").val("Double Click Me");
-  // });
-  //
-  // $("#btn_main").on("dblclick", function() {
-  //   $(".dope").text("You'll learn how to replace me");
-  //   $("#btn_main").val("Replace");
-  // });
-  //
-  //
-  // $("#btn_new").on("click", function() {
-  //   $(".dope").html('<b class="cool"> Hey there this is HTML</b>');
-  // });
-  //
-  //
-  //
-  // // ------------- 7. Form Events & Variables -------------
-  // $("form").on("submit", function(){
+  $("#target").on("click", function() {
+    // $("p#statement").hide();
+    // $("#box").show();
+    // $("#box").toggle();
+
+    // $("#box").slideDown(1000); // 1 second
+    // $("#box").slideUp(2000); // element needs to be showns 1st
+    $("#box").slideToggle(1000);
+
+    // $("#box").fadeIn(1000);
+    // $("#box").fadeOut(1000);
+    // $("#box").fadeTo(1000, 0.5);
+    // $("#box").fadeToggle(1000);
+  });
+
+
+
+  // ------------- 6. Text, Val & HTML Functions -------------
+  $("#btn_main").on("click", function() {
+    $(".dope").text("This is a new sentence.");
+    $("#btn_main").val("Double Click Me");
+  });
+
+  $("#btn_main").on("dblclick", function() {
+    $(".dope").text("You'll learn how to replace me");
+    $("#btn_main").val("Replace");
+  });
+
+
+  $("#btn_new").on("click", function() {
+    $(".dope").html('<b class="cool"> Hey there this is HTML</b>');
+  });
+
+
+
+  // ------------- 7. Form Events & Variables -------------
+  // $("button#enter_any_word").on("click", function(){
   //   var enterWord = $("input#entered_word").val(); // .val() Read the words in the input
-  //   // alert(enterWord);
-  // });
-  //
-  // $("button#loc_button").on("dblclick click", function(){
-  //   var enteredZip = $("input#entered_zip").val();
-  //   $("input#entered_city_state").val(enteredZip + " is for NJ");
-  // });
-  //
-  // $("input#entered_zip").on("focus", function(){
-  //   $("h2#city_display").text("Please type your zipcode");
-  // });
+  //   console.log(enterWord);
+  //   $('<h4>You have entered:' + enterWord + '</h4>').appendTo("h4#text_after_submit");
+  // }); // I DONT KNOW WHY ITS NOT WORKING
 
 
+  $("button#loc_button").on("dblclick click", function(){
+    var enteredZip = $("input#entered_zip").val();
+    $("input#entered_city_state").val(enteredZip + " is for NJ");
+  });
 
-
+  $("input#entered_zip").on("focus", function(){
+    $("h2#city_display").text("Please type your zipcode");
+  });
 
 
 
