@@ -1,6 +1,16 @@
 // ----------------- 5. Button on click -----------------
 $("#firstBtn").on("click", function() {
-  $("h4#statement").slideToggle(2000);
+  $("h4#statement").slideToggle(1000);
+});
+
+$("form").on("submit", function(){
+  var enterChat = $("input#entered_chat").val();
+  alert(enterChat);
+});
+
+$("button#send_chat").on("click", function(){
+  var enterChat = $("input#entered_chat").val();
+  $("h4#user-statement").val(enterChat);
 });
 
 
@@ -45,12 +55,18 @@ $("#btn_new").on("click", function() {
 
 // ------------- 7. Form Events & Variables -------------
 $("form").on("submit", function(){
-  var enterWord = $("input#entered_word").val();
-
+  var enterWord = $("input#entered_word").val(); // .val() Read the words in the input
+  alert(enterWord);
 });
 
+$("button#loc_button").on("dblclick click", function(){
+  var enteredZip = $("input#entered_zip").val();
+  $("input#entered_city_state").val(enteredZip + " is for NJ");
+});
 
-
+$("input#entered_zip").on("focus", function(){
+  $("h2#city_display").text("Please type your zipcode");
+});
 
 
 
