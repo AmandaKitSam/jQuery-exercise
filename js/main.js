@@ -1,8 +1,10 @@
 $(document).ready(function() {
 
   // ----------------- 5. Button on click -----------------
+
+  // Once the user clicks on the "Chat now" link, he gets a message from Mary.
   $("#firstBtn").on("click", function() {
-    $("h4#statement").slideDown(1000);
+    $("h4#statement").delay(1000).slideDown(1000);
   });
 
   // $("form").on("submit", function(){
@@ -10,11 +12,14 @@ $(document).ready(function() {
   //   alert(enterChat);
   // });
 
+  // The user enters the message and presses send button. The conversation ballon is updated with the message.
+  // After 3 seconds, Mary replies with the message
   $("button#send_chat").on("click", function(){
     var enterChat = $("input#entered_chat").val();
     // console.log(enterChat);
     // $("h4#user-statement").val(enterChat);
     $('<h4>Nicholas: "' + enterChat + '"</h4>').appendTo("h4#user-statement");
+    $("#mary-reply").delay(3000).slideDown(1000);
   });
 
 
