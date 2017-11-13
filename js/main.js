@@ -1,7 +1,7 @@
 // ----------------- 5. Button on click -----------------
-// $("#firstBtn").on("click", function() {
-//   $("p#statement").hide();
-// });
+$("#firstBtn").on("click", function() {
+  $("h4#statement").slideToggle(2000);
+});
 
 
 // ------------- 5. Event Handeling & Effects -------------
@@ -44,6 +44,12 @@ $("#btn_new").on("click", function() {
 
 
 // ------------- 7. Form Events & Variables -------------
+$("form").on("submit", function(){
+  var enterWord = $("input#entered_word").val();
+
+});
+
+
 
 
 

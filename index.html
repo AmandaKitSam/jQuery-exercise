@@ -18,15 +18,25 @@
   <body>
     <h1>jQuery Excise</h1>
 
+    <h4>Start Chatting by clicking "Chat Now"</h4>
+    <button id="firstBtn" type="button" name="button">Chat Now</button>
+    <br/>
+
+    <h4 id="statement" style="display: none;">Mary : "Hi Nicholas. This is Mary from Abank. How may I help you today?"</h4>
+    <br/>
+
+    <input type="text"><button type="button" name="button">Send</button>
+    <br/><br/>
+    <hr/>
+
+
     <!-- 5. Event Handeling -->
     <h4>5. Event Handeling</h4>
-    <!-- <input id="firstBtn" type="button" value="submit" /> -->
-    <a id="target" href="#"> Click Here </a>
-    <p id="statement"> This is a sentence </p>
-    <div id="box" style="width: 500px; height: 100px; border=1px solid #000; background-color:yellow; display:none">
+    <a id="target" href="#"> Click Here To See Yellow Box </a>
+    <div id="box" style="width: 500px; height: 100px; background-color:yellow; display:none">
       This is a rectangle
     </div>
-    <br/><br/><br/><br/><br/><hr/>
+    <br/><br/><br/><hr/>
 
 
     <!-- 6. Text, Val & HTML Functions -->
@@ -46,14 +56,12 @@
       <br/>
       <input type="submit">
     </form>
-    <br/><hr style="border: 0.2px solid lightgrey;"/>
+    <br/><hr style="border: 0.2px solid lightgrey;" />
 
     <h2 id="city_display"> Enter Location:</h2>
     <form method="post">
-      Enter Zipcode:
-      <input type="text" id="entered_zip">
-      State And City:
-      <input type="text" id="entered_city_state">
+      Enter Zipcode: <input type="text" id="entered_zip">
+      State And City: <input type="text" id="entered_city_state">
       <br/><br/>
     </form>
     <button id="loc_button"> Get Location </button>
