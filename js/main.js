@@ -68,14 +68,23 @@ $(document).ready(function() {
   //   var enterWord = $("input#entered_word").val(); // .val() Read the words in the input
   //   console.log(enterWord);
   //   $('<h4>You have entered:' + enterWord + '</h4>').appendTo("h4#text_after_submit");
-  // }); // I DONT KNOW WHY ITS NOT WORKING
+  // });
+  // (I DONT KNOW WHY ITS NOT WORKING)
 
 
+  // (Submit event works for forms)
+  $("form").on("submit", function(){
+    var enteredWord = $("input#entered_word").val();
+    alert(enteredWord);
+  });
+
+  // (Click and double click event)
   $("button#loc_button").on("dblclick click", function(){
     var enteredZip = $("input#entered_zip").val();
     $("input#entered_city_state").val(enteredZip + " is for NJ");
   });
 
+  // (Focus event)
   $("input#entered_zip").on("focus", function(){
     $("h2#city_display").text("Please type your zipcode");
   });
