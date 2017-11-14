@@ -90,6 +90,28 @@ $(document).ready(function() {
   });
 
 
+  // ------------- 8. Inline Styling -------------
+  $("h4#css-excise").css({
+    "color": "white",
+    "background-color": "grey",
+    "font-family": "arial, helvetica, sans-serif",
+    "text-align": "center",
+    "padding": "10px",
+    "line-height": "2em"
+  });
+
+  $("button#css-excise2").on("click", function(){
+    $("p#css-excise3").addClass("beautify");
+    $(this).on("dblclick", function(){
+      $(this).addClass("blue_border");
+    });
+  });
+
+
+
+
+
+
 
 
 
