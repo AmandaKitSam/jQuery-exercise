@@ -9,13 +9,26 @@ h1 {
 }
 
 
-/*------------- For Webchat -------------*/
+/*---------------------- For Webchat ----------------------*/
 h2 {
   font-size: 34px;
 }
 
 h2 {
   font-size: 30px;
+}
+
+.container {
+  position: relative;
+  /*text-align: center;*/
+}
+
+.centered {
+  position: absolute;
+  color: #ffffff;
+  top: 43%;
+  left: 35%;
+  transform: translate(-30%, -30%);
 }
 
 .btn-chat-now {
@@ -50,6 +63,17 @@ h2 {
   background: #35a47c;
   color: #ffffff;
 	cursor: pointer;
+}
+
+/*--------------------- Media Queries ---------------------*/
+@media only screen and (max-width : 991px) {
+  .centered {
+    font-size: 10px;
+    color: #000000;
+    top: 40%;
+    left: 35%;
+    transform: translate(-30%, -30%);
+  }
 }
 
 
