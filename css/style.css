@@ -9,6 +9,51 @@ h1 {
 }
 
 
+/*------------- For Webchat -------------*/
+h2 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.btn-chat-now {
+  background: #e00068;
+  color: #ffffff;
+  padding: 10px 40px;
+  font-size: 1.1em;
+  border-radius: 30px;
+  box-shadow: 0px 0px 0px 2px #e7307c;
+}
+
+.btn-chat-now:hover {
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+	box-shadow: 0px 0px 0px 2px #ff3c7c;
+  background: #ff3c7c;
+  color: #ffffff;
+	cursor: pointer;
+}
+
+.btn-send {
+  background: #00b976;
+  color: #ffffff;
+  padding: 10px 40px;
+  font-size: 1.1em;
+  border-radius: 30px;
+  box-shadow: 0px 0px 0px 2px #00b976;
+}
+
+.btn-send:hover {
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+	box-shadow: 0px 0px 0px 2px #35a47c;
+  background: #35a47c;
+  color: #ffffff;
+	cursor: pointer;
+}
+
+
+
 /*------------- 6. Text, Val & HTML Functions -------------*/
 .cool{
   font-size: 2em;

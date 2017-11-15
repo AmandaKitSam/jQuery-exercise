@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
 
     <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -17,24 +17,43 @@
 
   <body>
     <h1>jQuery Excise</h1>
+    <br/><br/>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <h2>Webchat</h2>
+          <h4>Start Chatting by clicking "Chat Now"</h4>
+          <button id="firstBtn" type="button" name="button" class="text-uppercase btn btn-chat-now btn-lg">Chat Now</button>
+          <br/><br/>
 
-    <h4>Start Chatting by clicking "Chat Now"</h4>
-    <button id="firstBtn" type="button" name="button">Chat Now</button>
-    <br/>
+          <h4 id="statement" style="display: none;">Mary : "Hi Nicholas. This is Mary from Abank. How may I help you today?"</h4><br/>
 
-    <h4 id="statement" style="display: none;">Mary : "Hi Nicholas. This is Mary from Abank. How may I help you today?"</h4>
+          <h4 id="user-statement"></h4><br/>
+          <!-- Nicholas will type the following: -->
+          <!-- Hi, I was trying to find out how I can change my Internet Banking password. Can you please tell me where I can find the menu please? -->
 
-    <h4 id="user-statement"></h4>
-    <!-- Nicholas will type the following: -->
-    <!-- Hi, I was trying to find out how I can change my Internet Banking password. Can you please tell me where I can find the menu please? -->
+          <h4 id="mary-reply" style="display: none;">Mary : "To reset your password just click on the My details menu. Once you have clicked the menu, a new page will appear. Select the link Change password. From this link it will take you to a screen where you can change your password."</h4><br/>
+          <br/>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
 
-    <h4 id="mary-reply" style="display: none;">Mary : "To reset your password just click on the My details menu. Once you have clicked the menu, a new page will appear. Select the link Change password. From this link it will take you to a screen where you can change your password."</h4>
-    <br/>
-    <!-- <form method="post"> -->
-      <input type="text" id="entered_chat" placeholder="Please enter your question">
-      <button id="send_chat">Send</button>
-    <!-- </form> -->
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <div class="form-group">
+            <input id="entered_chat" class="form-control" type="text" placeholder="Please enter your question" />
+          </div>
+          <div class="form-group">
+            <button id="send_chat" class="btn text-uppercase btn btn-send">Send</button>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+
+    </div>
     <br/><br/>
     <hr/>
 
