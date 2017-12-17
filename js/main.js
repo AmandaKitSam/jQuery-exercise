@@ -1,7 +1,13 @@
 $(document).ready(function() {
 
-  // ------------- 5. Event Handeling & Effects -------------
+  // ------------- Intro -------------
+  $(".fadeOut-text").on("click", function() {
+    $(this).fadeOut(2000);
+  });
 
+
+
+  // ------------- 5. Event Handeling & Effects -------------
   // $("#box").show();
 
   $("#target").on("click", function() {
@@ -64,6 +70,7 @@ $(document).ready(function() {
   $("input#entered_zip").on("focus", function(){
     $("h2#city_display").text("Please type your zipcode");
   });
+
 
 
   // ------------- 8. Inline Styling -------------
