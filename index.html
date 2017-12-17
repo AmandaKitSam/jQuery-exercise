@@ -6,19 +6,120 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>jQuery</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet" />
 
-    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
 
   <body>
-    <h1>jQuery Excise</h1>
-    <br/><br/>
+    <h1>jQuery Exercise</h1>
 
+    <!-- 5. Event Handeling -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <h3>5. Event Handeling</h3>
+          <a id="target" href="#"> Click Here To See Yellow Box </a>
+          <div id="box" style="width: 500px; height: 100px; background-color:yellow; display:none">
+            This is a rectangle
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <br/><br/><br/><hr/>
+
+
+
+    <!-- 6. Text, Val & HTML Functions -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>6. Text, Val & HTML Functions</h3>
+          <h2 class="dope"> You'll learn how to replace me </h2>
+          <input type="button" value="Replace" id="btn_main" />
+          <input type="button" value="Change HTML" id="btn_new" />
+        </div>
+      </div>
+    </div>
+    <br/><br/><br/><br/><br/><hr/>
+
+
+
+    <!-- 7. Form Events & Variables -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>7. Form Events & Variables</h3>
+          <form method="post">
+            Enter any word:
+            <br/>
+            <input type="text" id="entered_word">
+            <br/>
+            <button id="enter_any_word">Submit</button>
+            <h4 id="text_after_submit"></h4>
+          </form>
+
+          <br/><hr style="border: 0.2px solid lightgrey;" />
+
+          <h2 id="city_display"> Enter Location:</h2>
+          <form method="post">
+            Enter Zipcode: <input type="text" id="entered_zip">
+            State And City: <input type="text" id="entered_city_state">
+            <br/><br/>
+          </form>
+          <button id="loc_button"> Get Location </button>
+        </div>
+      </div>
+    </div>
+    <br/><br/><br/><br/><br/><hr/>
+
+
+
+    <!-- 8. Inline Styling -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>8. Inline Styling</h3>
+          <p id="css-excise3"> Exercise is a good habit to get into</p>
+          <p> Australia has a lot of kangaroos </p>
+          <h4 id="css-excise" class="boot"> Computers are cool </h4>
+
+          <button id="css-excise2" type="button">Style Paragraphs</button>
+
+          <button type="button">Some extra button</button>
+        </div>
+      </div>
+    </div>
+    <br/><br/><br/><br/><br/><hr/>
+
+
+
+    <!-- 16. AJAX -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>16. AJAX</h3>
+          <div class="main">
+
+          </div>
+
+          <button id="btn_1"> Load Messages </button>
+        </div>
+      </div>
+    </div>
+    <br/><br/><br/><br/><br/><hr/>
+
+
+
+
+
+    <!-- WEB CHAT -->
     <div class="container">
       <div class="row">
         <div class="col-sm-2"></div>
@@ -52,82 +153,7 @@
         <div class="col-sm-2"></div>
       </div>
     </div>
-    <br/><br/>
-    <hr/>
-
-
-
-    <!-- 5. Event Handeling -->
-    <h4>5. Event Handeling</h4>
-    <a id="target" href="#"> Click Here To See Yellow Box </a>
-    <div id="box" style="width: 500px; height: 100px; background-color:yellow; display:none">
-      This is a rectangle
-    </div>
-    <br/><br/><br/><hr/>
-
-
-
-    <!-- 6. Text, Val & HTML Functions -->
-    <h4>6. Text, Val & HTML Functions</h4>
-    <h2 class="dope"> You'll learn how to replace me </h2>
-    <input type="button" value="Replace" id="btn_main" />
-    <input type="button" value="Change HTML" id="btn_new" />
-    <br/><br/><br/><br/><br/><hr/>
-
-
-
-    <!-- 7. Form Events & Variables -->
-    <h4>7. Form Events & Variables</h4>
-    <form method="post">
-      Enter any word:
-      <br/>
-      <input type="text" id="entered_word">
-      <br/>
-      <button id="enter_any_word">Submit</button>
-      <h4 id="text_after_submit"></h4>
-    </form>
-
-    <br/><hr style="border: 0.2px solid lightgrey;" />
-
-
-    <h2 id="city_display"> Enter Location:</h2>
-    <form method="post">
-      Enter Zipcode: <input type="text" id="entered_zip">
-      State And City: <input type="text" id="entered_city_state">
-      <br/><br/>
-    </form>
-    <button id="loc_button"> Get Location </button>
-    <br/><br/><br/><br/><br/><hr/>
-
-
-
-    <!-- 8. Inline Styling -->
-    <p id="css-excise3"> Exercise is a good habit to get into</p>
-    <p> Australia has a lot of kangaroos </p>
-    <h4 id="css-excise" class="boot"> Computers are cool </h4>
-
-
-    <button id="css-excise2" type="button">Style Paragraphs</button>
-
-    <button type="button">Some extra button</button>
-
-
-    <br/><br/><br/><br/><br/><hr/>
-
-
-    <!-- 16. AJAX -->
-    <h4>16. AJAX</h4>
-    <div class="main">
-
-    </div>
-
-
-    <button id="btn_1"> Load Messages </button>
-    <br/><br/><br/><br/><br/><hr/>
-
-
-
-
+    <br/><br/><hr/>
 
 
 

@@ -1,9 +1,16 @@
-# jQuery Excise
+# jQuery Exercise
 
 ## By Amanda Sam
 
-### The project involves: HTML5, CSS3, Bootstrap, JavaScript and JS libraries
+### Built with: HTML5, CSS3, Bootstrap and jQuery
 
 ### Overview:
 
-- (Points)
+- Event & Effects
+
+- Text, Val & HTML Functions
+
+- Form Events & Variables
+
+---
+Please visit the website at: https://amandakitsam.github.io/jQuery-exercise/
