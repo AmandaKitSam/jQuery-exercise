@@ -1,6 +1,12 @@
 $(document).ready(function() {
 
   // ------------- Intro -------------
+  // Select the class intro-click, then click function
+  $(".intro-click").on("click", function() {
+    $(this).addClass("intro-click-red");
+    // Note: in addClass(), don't need a . in front of the class that you want to add
+  });
+
   $(".fadeOut-text").on("click", function() {
     $(this).fadeOut(2000);
   });

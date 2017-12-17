@@ -9,7 +9,51 @@ h1 {
 }
 
 
-/*---------------------- For Webchat ----------------------*/
+/*-------------------------------- Intro --------------------------------*/
+.intro-click-red {
+  color: #ff4040;
+}
+
+
+/*------------------- 6. Text, Val & HTML Functions -------------------*/
+.cool{
+  font-size: 2em;
+  color: green;
+}
+
+
+/*------------------------- 8. Inline Styling -------------------------*/
+.beautify{
+  background-color: lightgrey;
+  font-weight: bold;
+  color: blue;
+  text-align: center;
+}
+
+.blue_border{
+  border-style: dashed;
+  border-color: blue;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.important{
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#super{
+  border-style: dotted;
+  border-color: red;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+
+/*------------------------------ WEB CHAT ------------------------------*/
 h2 {
   font-size: 34px;
 }
@@ -70,43 +114,4 @@ h2 {
     left: 35%;
     transform: translate(-30%, -30%);
   }
-}
-
-
-
-/*------------- 6. Text, Val & HTML Functions -------------*/
-.cool{
-  font-size: 2em;
-  color: green;
-}
-
-
-/*------------- 8. Inline Styling -------------*/
-.beautify{
-  background-color: lightgrey;
-  font-weight: bold;
-  color: blue;
-  text-align: center;
-}
-
-.blue_border{
-  border-style: dashed;
-  border-color: blue;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-}
-
-.important{
-  color: red;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-#super{
-  border-style: dotted;
-  border-color: red;
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-bottom: 50px;
 }
