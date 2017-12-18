@@ -114,13 +114,23 @@ $(document).ready(function() {
     $(this).on("mouseleave", function(){
       $(this).attr("id", "small");
     });
-  }); // mouseover function
+  }); // END mouseover function
+
+  // click on h3#title: text changed
+  $("h3#title").on("click", function(){
+    $(this).attr("class", "pretty border");
+  });
+
+  // click on the img: size bigger
+  $("img#the_img").on("click", function(){
+    $(this).attr("class", "img-bigger");
+    // Or another way:
+    // $(this).attr({ "width": "60%", "length": "60%" });
+  });
 
 
 
-
-
-  // ----------------- CodeTest: Button on click -----------------
+  // ----------------- CodeTest WEBCHAT: Button on click -----------------
 
   // Once the user clicks on the "Chat now" link, he gets a message from Mary.
   $("#firstBtn").on("click", function() {
