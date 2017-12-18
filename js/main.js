@@ -97,6 +97,13 @@ $(document).ready(function() {
     });
   });
 
+  $("button#css-excise-2nd-button").on("click", function(){
+    $("p#css-excise-2nd-p").addClass("beautify2");
+  });
+
+
+
+  // ------------- 9.  -------------
 
 
 

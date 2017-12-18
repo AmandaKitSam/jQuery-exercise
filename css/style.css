@@ -30,9 +30,17 @@ h1 {
 
 /*------------------------- 8. Inline Styling -------------------------*/
 .beautify{
-  background-color: lightgrey;
+  background-color: #ffffff;
   font-size: 1.2em;
   color: #2734db;
+  text-align: center;
+  padding: 10px;
+}
+
+.beautify2{
+  background-color: #e7e7e7;
+  font-size: 1.2em;
+  color: #0062e3;
   text-align: center;
   padding: 10px;
 }
