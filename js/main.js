@@ -60,22 +60,22 @@ $(document).ready(function() {
   // });
   // (I DONT KNOW WHY ITS NOT WORKING)
 
-
   // (Submit event works for forms)
   $("form").on("submit", function(){
     var enteredWord = $("input#entered_word").val();
     alert(enteredWord);
+    // $("#text_after_submit").html(enteredWord);
   });
 
   // (Click and double click event)
   $("button#loc_button").on("dblclick click", function(){
     var enteredZip = $("input#entered_zip").val();
-    $("input#entered_city_state").val(enteredZip + " is for NJ");
+    $("input#entered_city_state").val(enteredZip + " is your post code");
   });
 
   // (Focus event)
   $("input#entered_zip").on("focus", function(){
-    $("h2#city_display").text("Please type your zipcode");
+    $("h2#city_display").text("Please type your post code:");
   });
 
 
@@ -93,7 +93,7 @@ $(document).ready(function() {
   $("button#css-excise2").on("click", function(){
     $("p#css-excise3").addClass("beautify");
     $(this).on("dblclick", function(){
-      $(this).addClass("blue_border");
+      $(this).addClass("inline-styling");
     });
   });
 

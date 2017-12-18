@@ -12,5 +12,7 @@
 
 - Form Events & Variables
 
+- Inline Styling & the use of ```this```
+
 ---
 Please visit the website at: https://amandakitsam.github.io/jQuery-exercise/

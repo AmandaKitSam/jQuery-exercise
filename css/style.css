@@ -8,6 +8,12 @@ h1 {
   text-align: center;
 }
 
+.btn {
+  padding: 10px 25px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
 
 /*-------------------------------- Intro --------------------------------*/
 .intro-click-red {
@@ -25,9 +31,14 @@ h1 {
 /*------------------------- 8. Inline Styling -------------------------*/
 .beautify{
   background-color: lightgrey;
-  font-weight: bold;
-  color: blue;
+  font-size: 1.2em;
+  color: #2734db;
   text-align: center;
+  padding: 10px;
+}
+
+.inline-styling {
+  color: #222222;
 }
 
 .blue_border{
