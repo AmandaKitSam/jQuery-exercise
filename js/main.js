@@ -46,7 +46,8 @@ $(document).ready(function() {
 
 
   $("#btn_new").on("click", function() {
-    $(".dope").html('<b class="cool"> Hey there this is HTML</b>');
+    $(".dope").html('<b class="cool">Hi, this is the replaced text in Green.</b>');
+    $("#btn_new").val("Text Is Green Now");
   });
 
 
