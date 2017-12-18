@@ -1,5 +1,6 @@
 body {
   font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 15px;
   background-color: #F0F0F0;
 }
 
@@ -69,6 +70,27 @@ h1 {
   padding-top: 50px;
   padding-left: 50px;
   padding-bottom: 50px;
+}
+
+
+/*---------------- 9. Selection & Attribute Modification ----------------*/
+#big {
+  font-size: 2em;
+  font-weight: bold
+}
+
+#small {
+  font-size: 1em;
+}
+
+.pretty {
+  color: pink;
+  font-style: italic;
+}
+
+.border {
+  border-style: dashed;
+  border-color: green;
 }
 
 

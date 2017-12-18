@@ -14,5 +14,7 @@
 
 - Inline Styling & the use of ```this```
 
+- Selection & Attribute Modification
+
 ---
 Please visit the website at: https://amandakitsam.github.io/jQuery-exercise/

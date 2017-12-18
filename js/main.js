@@ -103,7 +103,18 @@ $(document).ready(function() {
 
 
 
-  // ------------- 9.  -------------
+  // ------------- 9. Selection & Attribute Modification  -------------
+  // $("p.instruct_title, div#closing_statement").css("color", "green");
+  // Quicker for computer to process the code USING .add
+  $("p.instruct_title").add("div#closing_statement").css("color", "blue");
+
+  // mouseover: text bigger; mouseleave: text smaller
+  $("li.important").on("mouseover", function(){
+    $(this).attr("id", "big");
+    $(this).on("mouseleave", function(){
+      $(this).attr("id", "small");
+    });
+  }); // mouseover function
 
 
 
