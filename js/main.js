@@ -53,10 +53,13 @@ $(document).ready(function() {
 
 
   // ----------------- 7. Form Events & Variables -----------------
+
+  // .val() Read the words in the input
+
   // $("button#enter_any_word").on("click", function(){
-  //   var enterWord = $("input#entered_word").val(); // .val() Read the words in the input
+  //   var enterWord = $("input#entered_word").val();
   //   console.log(enterWord);
-  //   $('<h4>You have entered:' + enterWord + '</h4>').appendTo("h4#text_after_submit");
+  //   $('<h4>You have entered:' + enterWord + '</h4>').appendTo("div #text_after_submit");
   // });
   // (I DONT KNOW WHY ITS NOT WORKING)
 
@@ -104,6 +107,7 @@ $(document).ready(function() {
 
 
   // ------------- 9. Selection & Attribute Modification  -------------
+
   // $("p.instruct_title, div#closing_statement").css("color", "green");
   // Quicker for computer to process the code USING .add
   $("p.instruct_title").add("div#closing_statement").css("color", "blue");
@@ -138,6 +142,32 @@ $(document).ready(function() {
   //   $(this).remove();
   // });
 
+
+
+  // ----------------------- 10. CSS Selectors  -----------------------
+  // $("#steps li").css({
+  //   "color": "#582e8c",
+  //   "font-size": "1.3em"
+  // });
+
+  // > means only the direct child element (not elements within the child)
+  // $("#steps > li").css({ });
+
+  // Only target the first or last list
+  // $("#steps li:first").css({ });
+  // $("#steps li:last").css({ });
+
+  // To target the nth element
+  $("#steps li:nth-child(3)").css({ "color": "#00badb" });
+
+  // To target element with a class attr or an id
+  // $("p[class]").css({ "border": "1px solid red" });
+  // $("li[class]").css({ "border": "1px solid red" });
+  // $("ul[id='steps']").css({ "border": "1px solid red" });
+
+
+
+  // ------------- 11.  -------------
 
 
 
