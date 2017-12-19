@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  // ------------- Intro -------------
+  // -------------------------- Intro --------------------------
   // Select the class intro-click, then click function
   $(".intro-click").on("click", function() {
     $(this).toggleClass("intro-click-red");
@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
 
-  // ------------- 5. Event Handeling & Effects -------------
+  // --------------- 5. Event Handeling & Effects --------------
   // $("#box").show();
 
   $("#target").on("click", function() {
@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 
 
-  // ------------- 6. Text, Val & HTML Functions -------------
+  // --------------- 6. Text, Val & HTML Functions ---------------
   $("#btn_main").on("click", function() {
     $(".dope").text("This is a new sentence.");
     $("#btn_main").val("Double Click Me");
@@ -52,7 +52,7 @@ $(document).ready(function() {
 
 
 
-  // ------------- 7. Form Events & Variables -------------
+  // ----------------- 7. Form Events & Variables -----------------
   // $("button#enter_any_word").on("click", function(){
   //   var enterWord = $("input#entered_word").val(); // .val() Read the words in the input
   //   console.log(enterWord);
@@ -80,7 +80,7 @@ $(document).ready(function() {
 
 
 
-  // ------------- 8. Inline Styling -------------
+  // --------------------- 8. Inline Styling ---------------------
   $("h4#css-excise").css({
     "color": "white",
     "background-color": "grey",
@@ -128,11 +128,25 @@ $(document).ready(function() {
     // $(this).attr({ "width": "60%", "length": "60%" });
   });
 
+  // double click on the img: size back to before
+  $("img#the_img").on("dblclick", function(){
+    $(this).removeAttr("class", "img-bigger");
+  });
+
+  // Remove the image
+  // $("img#the_img").on("dblclick", function(){
+  //   $(this).remove();
+  // });
+
+
+
+
+
 
 
   // ----------------- CodeTest WEBCHAT: Button on click -----------------
 
-  // Once the user clicks on the "Chat now" link, he gets a message from Mary.
+  // Once the user clicks on the "Chat now" link, he gets a message from Mary
   $("#firstBtn").on("click", function() {
     $("h4#statement").delay(1000).slideDown(1000);
   });
