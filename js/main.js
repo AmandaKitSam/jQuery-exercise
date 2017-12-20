@@ -165,6 +165,9 @@ $(document).ready(function() {
   // $("li[class]").css({ "border": "1px solid red" });
   // $("ul[id='steps']").css({ "border": "1px solid red" });
 
+  // To target siblings of list with id of steps
+  // $("ul#steps ~ div").css({ "border": "1px solid green" });
+
 
 
   // ------------- 11.  -------------

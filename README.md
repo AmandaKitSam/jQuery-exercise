@@ -6,6 +6,12 @@
 
 ### Overview:
 
+1. Understand - jQuery Syntax
+
+2. Selection and Traversal Mastery
+
+3. Advanced Event Handling and Ajax
+
 - Event & Effects
 
 - Text, Val & HTML Functions
