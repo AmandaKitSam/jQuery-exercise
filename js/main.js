@@ -279,11 +279,21 @@ $(document).ready(function() {
 
   // ----------------- 14. The Event Lifecycle -----------------
 
-  $("#see-details1").on("click", function() {
+  $("button.see-details").on("click", function() {
+    const price = $(this).closest(".book").data("price");
+    const author = $(this).closest(".book").data("author");
+    const details = $("<p> Price: " + price + "<br/>Author: <b>" + author + "</b> </p>" );
+    $(this).after(details);
+    $(this).closest(".book").css({ "background-color": "rgba(83, 255, 141, 0.5)" });
+    $(this).remove();
+
     // $("p.book-price, p.book-author").toggleClass("display_none");
-    $("p.book-price, p.book-author").removeClass("display_none");
-    $(this).hide();
+    // $("p.book-price, p.book-author").removeClass("display_none");
+    // $(this).hide();
   });
+
+
+
 
 
 
