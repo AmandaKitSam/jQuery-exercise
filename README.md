@@ -6,7 +6,7 @@
 
 ### Overview:
 
-1. Understand - jQuery Syntax
+1. Understand - jQuery Syntax :white_check_mark:
 
 - Event & Effects
 
@@ -20,7 +20,7 @@
 
 - CSS Selectors
 
-2. Selection and Traversal Mastery
+2. Selection and Traversal Mastery :white_check_mark:
 
 - DOM Traversal
 
