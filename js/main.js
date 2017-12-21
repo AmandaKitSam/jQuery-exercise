@@ -209,7 +209,7 @@ $(document).ready(function() {
 
 
 
-  // ------------- 12. DOM Traversal  -------------
+  // ------------------------ 12. DOM Traversal  ------------------------
 
   // the use of .find(selector)
   // instead of using $("#math_subjects li")
@@ -233,9 +233,22 @@ $(document).ready(function() {
   // $("#courses").children("li").prev().css({ "border": "1px solid green" });
 
   // the use of .closest() -> closest ancestors
-  $("#courses").children("li").children().first().closest("ul").css({ "border": "1px solid green" });
+  // $("#courses").children("li").children().first().closest("ul").css({ "border": "1px solid green" });
   // $("#courses").children("li").children().first().parent().css({ "border": "1px solid green" });
   // $("#courses").children("li").children().first().parents("ul").css({ "border": "1px solid green" });
+
+
+  // ------------------------ 13. DOM Manipulation ------------------------
+
+  // the use of .append(selector)
+  $("li ul#math_subjects").append("<li style='border: 1px solid green;'>New Course</li>");
+
+  const newCourse = $("<li style='border: 1px solid red;'>Coding</li>");
+  $("li ul#math_subjects").append(newCourse);
+
+  // the use of .prepend(selector)
+
+
 
 
 

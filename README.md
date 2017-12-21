@@ -24,6 +24,8 @@
 
 - DOM Traversal
 
+- DOM Manipulation
+
 3. Advanced Event Handling and Ajax
 
 ---
