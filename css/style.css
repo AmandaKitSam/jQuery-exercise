@@ -133,18 +133,18 @@ th {
 /*------------------------- 14. The Event Lifecycle -------------------------*/
 .div_next {
   display: inline-block;
-  border: 2px solid #9a9a9a;
+  border: 1.5px solid #ababab;
   border-radius: 20px;
   box-shadow: 0 10px 10px #494949;
   padding: 50px 80px;
 }
 
 .title{
-  color: #0043b6;
+  color: #163565;
 }
 
 .book{
-  border: 2px solid #18c658;
+  border: 1.5px solid #18c658;
   border-radius: 15px;
   margin: 10px 0;
   padding: 30px;

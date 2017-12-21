@@ -279,17 +279,27 @@ $(document).ready(function() {
 
   // ----------------- 14. The Event Lifecycle -----------------
 
-  $("button.see-details").on("click", function() {
+  // The use of .stopPropagation() - Prevent the event from bubbling back
+  $("button.see-details").on("click", function(event) {
     const price = $(this).closest(".book").data("price");
     const author = $(this).closest(".book").data("author");
     const details = $("<p> Price: " + price + "<br/>Author: <b>" + author + "</b> </p>" );
     $(this).after(details);
     $(this).closest(".book").css({ "background-color": "rgba(83, 255, 141, 0.5)" });
     $(this).remove();
+    event.stopPropagation();
 
     // $("p.book-price, p.book-author").toggleClass("display_none");
     // $("p.book-price, p.book-author").removeClass("display_none");
     // $(this).hide();
+  });
+
+  // Click the <div>, CSS changed, doesn't effect the button
+  $("div.book").on("click", function() {
+    $(this).css({
+      "background-color": "rgba(154, 114, 251, 0.5)",
+      "border": "1.5px solid rgba(154, 114, 251, 0.5)"
+    });
   });
 
 
