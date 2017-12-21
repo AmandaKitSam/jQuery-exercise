@@ -168,6 +168,13 @@ $(document).ready(function() {
   // To target siblings of list with id of steps
   // $("ul#steps ~ div").css({ "border": "1px solid green" });
 
+  // To target siblings that is immediately to the ul
+  // $("ul#steps + div").css({ "border": "1px solid green" });
+
+  // the use of !=
+  // To target the class name of <p> that is not instruct_title
+  $("p[class!='instruct_title']").css({ "border": "1px solid green" });
+
 
 
   // ------------- 11.  -------------
