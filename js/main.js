@@ -181,7 +181,16 @@ $(document).ready(function() {
 
   // the use of $= (ends with)
   // To target the class name that is end with 'ant'
-  $("[class^='imp']").css({ "border": "1px solid green" });
+  // $("[class$='ant']").css({ "border": "1px solid green" });
+
+  // the use of tolda equals ~= (match Entire word)
+  // To target that contain the whole word of 'steps'
+  // $("[id~='steps']").css({ "border": "1px solid green" });
+
+  // the use of asterisk equals *= (substring chars appear in)
+  // To target that contain the id of 'closing'
+  $("[id*='closing']").css({ "border": "1px solid green" });
+
 
 
   // ------------- 11.  -------------
