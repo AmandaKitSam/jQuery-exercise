@@ -279,7 +279,11 @@ $(document).ready(function() {
 
   // ----------------- 14. The Event Lifecycle -----------------
 
-
+  $("#see-details1").on("click", function() {
+    // $("p.book-price, p.book-author").toggleClass("display_none");
+    $("p.book-price, p.book-author").removeClass("display_none");
+    $(this).hide();
+  });
 
 
 

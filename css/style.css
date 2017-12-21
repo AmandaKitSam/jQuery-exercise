@@ -152,6 +152,10 @@ th {
   padding: 30px;
 }
 
+.display_none {
+  display: none;
+}
+
 
 
 /*--------------- Footer Section ---------------*/
