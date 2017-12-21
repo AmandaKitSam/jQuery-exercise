@@ -243,14 +243,19 @@ $(document).ready(function() {
   // the use of .append(selector)
   $("li ul#math_subjects").append("<li style='border: 1px solid green;'>New Course</li>");
 
-  const newCourse = $("<li style='border: 1px solid blue;'>Coding</li>");
+  const $newCourse = $("<li style='border: 1px solid blue;'>Coding</li>");
   const newCourse2 = "<li style='border: 1px solid #00baff;'>Design</li>";
-  $("li ul#math_subjects").append(newCourse);
-  $("li ul#math_subjects").append(newCourse);
-  $("li ul#math_subjects").append(newCourse);
-  $("li ul#math_subjects").append(newCourse2);
-  $("li ul#math_subjects").append(newCourse2);
-  $("li ul#math_subjects").append(newCourse2);
+  $("li ul#math_subjects").parent().append( $newCourse );
+  $("li ul#math_subjects").parent().append( $newCourse );
+  $("li ul#math_subjects").parent().append( $newCourse );
+  $("li ul#math_subjects").parent().append( newCourse2 );
+  $("li ul#math_subjects").parent().append( newCourse2 );
+  $("li ul#math_subjects").parent().append( newCourse2 );
+
+  $("li ul#math_subjects").parent().append( $newCourse );
+
+  // move all the h3 on the page after the li element
+  // $("li ul#math_subjects").append( $("h3") );
 
   // the use of .prepend(selector)
   // $("li ul#math_subjects").prepend(newCourse);
@@ -260,6 +265,14 @@ $(document).ready(function() {
 
   // the use of .before(selector)
   // $("li ul#math_subjects").before(newCourse);
+
+  // the use of .remove(selector)
+  // $newCourse.remove();
+
+  // can not remove the below variable
+  // newCourse2.remove();
+
+  // $("#science_subjects").remove();
 
 
 
