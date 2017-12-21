@@ -244,7 +244,7 @@ $(document).ready(function() {
   $("li ul#math_subjects").append("<li style='border: 1px solid green;'>New Course</li>");
 
   const newCourse = $("<li style='border: 1px solid red;'>Coding</li>");
-  $("li ul#math_subjects").append(newCourse);
+  // $("li ul#math_subjects").append(newCourse);
 
   // the use of .prepend(selector)
   // $("li ul#math_subjects").prepend(newCourse);
@@ -252,6 +252,8 @@ $(document).ready(function() {
   // the use of .after(selector)
   // $("li ul#math_subjects").after(newCourse);
 
+  // the use of .before(selector)
+  $("li ul#math_subjects").before(newCourse);
 
 
 
