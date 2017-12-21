@@ -112,7 +112,7 @@ $(document).ready(function() {
   // Quicker for computer to process the code USING .add
   $("p.instruct_title").add("div#closing_statement").css("color", "blue");
 
-  // mouseover: text bigger; mouseleave: text smaller
+  // Mouseover: text bigger; Mouseleave: text smaller
   $("li.important").on("mouseover", function(){
     $(this).attr("id", "big");
     $(this).on("mouseleave", function(){
@@ -120,19 +120,19 @@ $(document).ready(function() {
     });
   }); // END mouseover function
 
-  // click on h3#title: text changed
+  // Click on h3#title: text changed
   $("h3#title").on("click", function(){
     $(this).attr("class", "pretty border");
   });
 
-  // click on the img: size bigger
+  // Click on the img: size bigger
   $("img#the_img").on("click", function(){
     $(this).attr("class", "img-bigger");
     // Or another way:
     // $(this).attr({ "width": "60%", "length": "60%" });
   });
 
-  // double click on the img: size back to before
+  // Double click on the img: size back to before
   $("img#the_img").on("dblclick", function(){
     $(this).removeAttr("class", "img-bigger");
   });
@@ -150,7 +150,7 @@ $(document).ready(function() {
   //   "font-size": "1.3em"
   // });
 
-  // > means only the direct child element (not elements within the child)
+  // > It means only the direct child element (not elements within the child)
   // $("#steps > li").css({ });
 
   // Only target the first or last list
@@ -171,27 +171,27 @@ $(document).ready(function() {
   // To target siblings that is immediately to the ul
   // $("ul#steps + div").css({ "border": "1px solid green" });
 
-  // the use of !=
+  // The use of !=
   // To target the class name of <p> that is not instruct_title
   // $("p[class!='instruct_title']").css({ "border": "1px solid green" });
 
-  // the carrot equal to ^= (starts with)
+  // The carrot equal to ^= (starts with)
   // To target the class name that is start with 'imp'
   // $("[class^='imp']").css({ "border": "1px solid green" });
 
-  // the use of $= (ends with)
+  // The use of $= (ends with)
   // To target the class name that is end with 'ant'
   // $("[class$='ant']").css({ "border": "1px solid green" });
 
-  // the use of tolda equals ~= (match Entire word)
+  // The use of tolda equals ~= (match Entire word)
   // To target that contain the whole word of 'steps'
   // $("[id~='steps']").css({ "border": "1px solid green" });
 
-  // the use of asterisk equals *= (substring chars appear in)
+  // The use of asterisk equals *= (substring chars appear in)
   // To target that contain the id of 'closing'
   // $("[id*='closing']").css({ "border": "1px solid green" });
 
-  // the use of :has(selector)
+  // The use of :has(selector)
   // To target div that has <p>
   // $("div:has(p)").css({ "border": "1px solid green" });
   // To target div that has header
@@ -200,7 +200,7 @@ $(document).ready(function() {
   // To target all headers on the page
   // $(":header").css({ "border": "1px solid green" });
 
-  // the use of :not(selector) - going to be negated
+  // The use of :not(selector) - going to be negated
   // To target the li class name is not 'important'
   // $("li:not(.important)").css({ "border": "1px solid green" });
 
@@ -211,36 +211,37 @@ $(document).ready(function() {
 
   // ------------------------ 12. DOM Traversal  ------------------------
 
-  // the use of .find(selector)
+  // The use of .find(selector)
   // instead of using $("#math_subjects li")
   // $("#math_subjects").find("li").css({ "border": "1px solid green" });
 
-  // the use of .children(selector)
+  // The use of .children(selector)
   // $("#courses").children("li").css({ "border": "1px solid green" });
 
-  // the use of .first() and .last
+  // The use of .first() and .last
   // $("#courses").children("li").first().css({ "border": "1px solid green" });
   // $("#courses").children("li").last().css({ "border": "1px solid green" });
 
-  // the use of .parent(selector) and .parents(selector) -> all ancestors which include body and html
+  // The use of .parent(selector) and .parents(selector) -> all ancestors which include body and html
   // $("#courses").children("li").children().parent().css({ "border": "1px solid green" });
   // $("#courses").children("li").children().parents().css({ "border": "1px solid green" });
 
   // Walking the DOM
-  // the use of .next(selector) and .prev(selector)
+  // The use of .next(selector) and .prev(selector)
   // $("#courses").children("li").css({ "border": "1px solid green" });
   // $("#courses").children("li").next().css({ "border": "1px solid green" });
   // $("#courses").children("li").prev().css({ "border": "1px solid green" });
 
-  // the use of .closest() -> closest ancestors
+  // The use of .closest() -> closest ancestors
   // $("#courses").children("li").children().first().closest("ul").css({ "border": "1px solid green" });
   // $("#courses").children("li").children().first().parent().css({ "border": "1px solid green" });
   // $("#courses").children("li").children().first().parents("ul").css({ "border": "1px solid green" });
 
 
+
   // ------------------------ 13. DOM Manipulation ------------------------
 
-  // the use of .append(selector)
+  // The use of .append(selector)
   $("li ul#math_subjects").append("<li style='border: 1px solid green;'>New Course</li>");
 
   const $newCourse = $("<li style='border: 1px solid blue;'>Coding</li>");
@@ -254,25 +255,32 @@ $(document).ready(function() {
 
   $("li ul#math_subjects").parent().append( $newCourse );
 
-  // move all the h3 on the page after the li element
+  // Move all the h3 on the page after the li element
   // $("li ul#math_subjects").append( $("h3") );
 
-  // the use of .prepend(selector)
+  // The use of .prepend(selector)
   // $("li ul#math_subjects").prepend(newCourse);
 
-  // the use of .after(selector)
+  // The use of .after(selector)
   // $("li ul#math_subjects").after(newCourse);
 
-  // the use of .before(selector)
+  // The use of .before(selector)
   // $("li ul#math_subjects").before(newCourse);
 
-  // the use of .remove(selector)
+  // The use of .remove(selector)
   // $newCourse.remove();
 
-  // can not remove the below variable
+  // Can not remove the below variable
   // newCourse2.remove();
 
   // $("#science_subjects").remove();
+
+
+
+  // ----------------- 14. The Event Lifecycle -----------------
+
+
+
 
 
 

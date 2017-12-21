@@ -28,5 +28,7 @@
 
 3. Advanced Event Handling and Ajax
 
+- Understand the Event Lifecycle
+
 ---
 Please visit the website at: https://amandakitsam.github.io/jQuery-exercise/

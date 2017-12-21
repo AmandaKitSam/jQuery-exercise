@@ -124,148 +124,193 @@
 
     <!-- 9. Selection & Attribute Modification -->
     <!-- 10. + 11. CSS Selectors -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h3>9. Selection & Attribute Modification</h3>
-          <h3>10. 11. CSS Selectors</h3>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>9. Selection & Attribute Modification</h3>
+            <h3>10. 11. CSS Selectors</h3>
 
-          <h3 id="title">Instructions for Changing Tire</h3>
-          <h4>( Try Click then Double Click the Image )</h4>
-          <img id="the_img"  src="img/car-tire.jpg" width="35%" height="35%"/>
+            <h3 id="title">Instructions for Changing Tire</h3>
+            <h4>( Try Click then Double Click the Image )</h4>
+            <img id="the_img"  src="img/car-tire.jpg" width="35%" height="35%"/>
 
-          <h3>How to Change Tire</h3>
-          <p> We'll go over the steps for changing a tire </p>
-          <p class="instruct_title">Incase of flat tire:</p>
-          <ul id="steps">
-            <li class="important">Park Vehicle Safely</li>
-            <li>Retrieve Jack and attach to vehicle frame</li>
-            <li>untighten tire bolts</li>
-            <li class="important">Raise Vehicle by cranking jack</li>
-            <li>Unscrew Bolts and Attach Replacement tire</li>
-            <li class="important">Tighten the bolts</li>
-            <li>Lower vehicle and tighten bolts completely</li>
-          </ul>
+            <h3>How to Change Tire</h3>
+            <p> We'll go over the steps for changing a tire </p>
+            <p class="instruct_title">Incase of flat tire:</p>
+            <ul id="steps">
+              <li class="important">Park Vehicle Safely</li>
+              <li>Retrieve Jack and attach to vehicle frame</li>
+              <li>untighten tire bolts</li>
+              <li class="important">Raise Vehicle by cranking jack</li>
+              <li>Unscrew Bolts and Attach Replacement tire</li>
+              <li class="important">Tighten the bolts</li>
+              <li>Lower vehicle and tighten bolts completely</li>
+            </ul>
 
-          <div id="closing_statement">
-            <p>Make sure to put away the tools</p>
-            <p>Make sure to put away the tools</p>
+            <div id="closing_statement">
+              <p>Make sure to put away the tools</p>
+              <p>Make sure to put away the tools</p>
+            </div>
+
+            <div id="more_instructions">
+                <h5>If you have roadside assistance you may get their help</h5>
+            </div>
+
+            <ul id="save_tools">
+                <li>save the jack in the storage compartment</li>
+                <li>save the flat tire in the trunk</li>
+            </ul>
+
           </div>
-
-          <div id="more_instructions">
-              <h5>If you have roadside assistance you may get their help</h5>
-          </div>
-
-          <ul id="save_tools">
-              <li>save the jack in the storage compartment</li>
-              <li>save the flat tire in the trunk</li>
-          </ul>
-
         </div>
       </div>
-    </div>
-    <br/><br/><br/><br/><br/><hr/>
+    </section>
+    <hr/>
 
 
 
     <!-- 12. DOM Traversal + 13. DOM Manipulation -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
 
-          <h3>12. DOM Traversal</h3>
-          <h3>13. DOM Manipulation</h3>
+            <h3>12. DOM Traversal</h3>
+            <h3>13. DOM Manipulation</h3>
 
-          <h2>Course Catelog</h2>
-          <h3>Below is a list of course offerings to choose from</h3>
-          <div>
-            <p>Below is a list of all the available courses <br>
-            that can be enrolled in this semester:
-            </p>
+            <h2>Course Catelog</h2>
+            <h3>Below is a list of course offerings to choose from</h3>
+            <div>
+              <p>Below is a list of all the available courses <br>
+              that can be enrolled in this semester:
+              </p>
+            </div>
+            <ul id="courses">
+              <li>Sociology</li>
+              <li>Psychology</li>
+              <li>Mathematics
+                <ul id="math_subjects">
+                  <li>Algebra</li>
+                  <li>Geometry</li>
+                  <li>Calculus</li>
+                </ul>
+              </li>
+              <li>Sciences
+                <ul id="science_subjects">
+                  <li>Geology</li>
+                  <li>Physics</li>
+                  <li>Chemistry</li>
+                </ul>
+              </li>
+              <li>World History</li>
+            </ul>
+
           </div>
-          <ul id="courses">
-            <li>Sociology</li>
-            <li>Psychology</li>
-            <li>Mathematics
-              <ul id="math_subjects">
-                <li>Algebra</li>
-                <li>Geometry</li>
-                <li>Calculus</li>
-              </ul>
-            </li>
-            <li>Sciences
-              <ul id="science_subjects">
-                <li>Geology</li>
-                <li>Physics</li>
-                <li>Chemistry</li>
-              </ul>
-            </li>
-            <li>World History</li>
-          </ul>
-
         </div>
       </div>
-    </div>
-    <br/><br/><br/><br/><br/><hr/>
+    </section>
+    <hr/>
+
+
+
+    <!-- 14. The Event Lifecycle -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <h3>14. The Event Lifecycle</h3>
+
+            <div id="books_div" class="div_next" >
+              <h2> Top Books to Read </h2>
+
+              <div class="book" data-price="22.00" data-author="Paulo Coelho">
+                <h3 class="title"> The Alchemist </h3>
+                <button class="btn btn-secondary"> See Details </button>
+              </div>
+
+              <div class="book" data-price="18.00" data-author="Paulo Coelho">
+                <h3 class="title"> Warrior of The Light </h3>
+                <button class="btn btn-secondary"> See Details </button>
+              </div>
+
+              <div class="book" data-price="12.00" data-author="Jon Gordon">
+                <h3 class="title"> The Energy Bus </h3>
+                <button class="btn btn-secondary"> See Details </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr/>
 
 
 
 
     <!-- 16. AJAX -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h3>16. AJAX</h3>
-          <div class="main">
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>16. AJAX</h3>
+            <div class="main">
 
+            </div>
+
+            <button class="btn btn-danger" id="btn_1"> Load Messages </button>
           </div>
-
-          <button class="btn btn-danger" id="btn_1"> Load Messages </button>
         </div>
       </div>
-    </div>
-    <br/><br/><br/><br/><br/><hr/>
+    </section>
+    <hr/>
 
 
-
-
-    <br/><hr style="border: 0.4px dashed #222222;" />
 
     <!-- WEB CHAT -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
-          <h2>Webchat</h2>
-          <h4>Start Chatting by clicking "Chat Now"</h4>
-          <button id="firstBtn" type="button" name="button" class="text-uppercase btn btn-chat-now btn-lg animated bounce">Chat Now</button>
-          <br/><br/>
-
-          <img class="img-responsive" src="img/chat-box.png" alt="chat" style="width:100%;"><br/>
-          <div class="centered">
-            <h4 id="statement" class="text-justify" style="display: none;">Mary : "Hi Nicholas. This is Mary from Abank. How may I help you today?"</h4><br/>
-
-            <h4 id="user-statement" class="text-justify"></h4><br/>
-            <!-- Nicholas will type the following: -->
-            <!-- Hi, I was trying to find out how I can change my Internet Banking password. Can you please tell me where I can find the menu please? -->
-
-            <h4 id="mary-reply" class="text-justify" style="display: none;">Mary : "To reset your password just click on the My details menu. Once you have clicked the menu, a new page will appear. Select the link Change password. From this link it will take you to a screen where you can change your password."</h4>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <h2>Webchat</h2>
+            <h4>Start Chatting by clicking "Chat Now"</h4>
+            <button id="firstBtn" type="button" name="button" class="text-uppercase btn btn-chat-now btn-lg animated bounce">Chat Now</button>
             <br/><br/>
-          </div>
-          <br/><br/>
 
-          <div class="form-group">
-            <input id="entered_chat" class="form-control" type="text" placeholder="Please enter your question" />
-          </div>
-          <div class="form-group">
-            <button id="send_chat" class="btn text-uppercase btn btn-send">Send</button>
-          </div>
+            <img class="img-responsive" src="img/chat-box.png" alt="chat" style="width:100%;"><br/>
+            <div class="centered">
+              <h4 id="statement" class="text-justify" style="display: none;">Mary : "Hi Nicholas. This is Mary from Abank. How may I help you today?"</h4><br/>
 
-          </div>
-        <div class="col-sm-2"></div>
+              <h4 id="user-statement" class="text-justify"></h4><br/>
+              <!-- Nicholas will type the following: -->
+              <!-- Hi, I was trying to find out how I can change my Internet Banking password. Can you please tell me where I can find the menu please? -->
+
+              <h4 id="mary-reply" class="text-justify" style="display: none;">Mary : "To reset your password just click on the My details menu. Once you have clicked the menu, a new page will appear. Select the link Change password. From this link it will take you to a screen where you can change your password."</h4>
+              <br/><br/>
+            </div>
+            <br/><br/>
+
+            <div class="form-group">
+              <input id="entered_chat" class="form-control" type="text" placeholder="Please enter your question" />
+            </div>
+            <div class="form-group">
+              <button id="send_chat" class="btn text-uppercase btn btn-send">Send</button>
+            </div>
+
+            </div>
+          <div class="col-sm-2"></div>
+        </div>
       </div>
-    </div>
-    <br/><br/><hr/>
+    </section>
+
+
+
+    <footer>
+      <p class="text-center text-uppercase">By Amanda Sam | All Right Reserved 2018</p>
+    </footer>
 
 
 
