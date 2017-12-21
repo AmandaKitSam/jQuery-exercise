@@ -144,7 +144,7 @@ $(document).ready(function() {
 
 
 
-  // ----------------------- 10. CSS Selectors  -----------------------
+  // ----------------------- 10. 11. CSS Selectors  -----------------------
   // $("#steps li").css({
   //   "color": "#582e8c",
   //   "font-size": "1.3em"
@@ -209,9 +209,14 @@ $(document).ready(function() {
 
 
 
-  // ------------- 11.  -------------
+  // ------------- 12. DOM Traversal  -------------
 
+  // the use of .find(selector)
+  // instead of using $("#math_subjects li")
+  // $("#math_subjects").find("li").css({ "border": "1px solid green" });
 
+  // the use of .children(selector)
+  $("#courses").children("li").css({ "border": "1px solid green" });
 
 
 

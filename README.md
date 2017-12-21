@@ -8,10 +8,6 @@
 
 1. Understand - jQuery Syntax
 
-2. Selection and Traversal Mastery
-
-3. Advanced Event Handling and Ajax
-
 - Event & Effects
 
 - Text, Val & HTML Functions
@@ -21,6 +17,14 @@
 - Inline Styling & the use of ```this```
 
 - Selection & Attribute Modification
+
+- CSS Selectors
+
+2. Selection and Traversal Mastery
+
+- DOM Traversal
+
+3. Advanced Event Handling and Ajax
 
 ---
 Please visit the website at: https://amandakitsam.github.io/jQuery-exercise/
