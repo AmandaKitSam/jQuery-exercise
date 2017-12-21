@@ -216,8 +216,15 @@ $(document).ready(function() {
   // $("#math_subjects").find("li").css({ "border": "1px solid green" });
 
   // the use of .children(selector)
-  $("#courses").children("li").css({ "border": "1px solid green" });
+  // $("#courses").children("li").css({ "border": "1px solid green" });
 
+  // the use of .first() and .last
+  // $("#courses").children("li").first().css({ "border": "1px solid green" });
+  // $("#courses").children("li").last().css({ "border": "1px solid green" });
+
+  // the use of .parent(selector) and .parents(selector) -> which includes body and html
+  $("#courses").children("li").children().parent().css({ "border": "1px solid green" });
+  // $("#courses").children("li").children().parents().css({ "border": "1px solid green" });
 
 
 
