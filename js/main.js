@@ -84,12 +84,15 @@ $(document).ready(function() {
 
 
   // --------------------- 8. Inline Styling ---------------------
+
+  // Style for 'Coding Everyday | Learn Non-Stop'
   $("h4#css-excise").css({
     "color": "white",
-    "background-color": "grey",
+    "background-color": "rgba(0, 174, 196, 0.8)",
     "font-family": "arial, helvetica, sans-serif",
     "text-align": "center",
     "padding": "10px",
+    "margin-bottom": "20px",
     "line-height": "2em"
   });
 
@@ -309,6 +312,7 @@ $(document).ready(function() {
 
 
 
+
   // ----------------- CodeTest WEBCHAT: Button on click -----------------
 
   // Once the user clicks on the "Chat now" link, he gets a message from Mary
@@ -327,7 +331,7 @@ $(document).ready(function() {
     var enterChat = $("input#entered_chat").val();
     // console.log(enterChat);
     // $("h4#user-statement").val(enterChat);
-    $('<h4>Nicholas: "' + enterChat + '"</h4>').appendTo("h4#user-statement");
+    $('<h4 style="font-size: 18px">Nicholas: "' + enterChat + '"</h4>').appendTo("h4#user-statement");
     $("#mary-reply").delay(3000).slideDown(1000);
   });
 
