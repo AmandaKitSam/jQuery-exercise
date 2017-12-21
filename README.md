@@ -2,7 +2,7 @@
 
 ## By Amanda Sam
 
-### Built with: HTML5, CSS3, Bootstrap and jQuery
+### Built with: HTML5, CSS3, Bootstrap (v4.0.0-beta.2) and jQuery
 
 ### Overview:
 
