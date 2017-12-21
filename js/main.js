@@ -202,7 +202,11 @@ $(document).ready(function() {
 
   // the use of :not(selector) - going to be negated
   // To target the li class name is not 'important'
-  $("li:not(.important)").css({ "border": "1px solid green" });
+  // $("li:not(.important)").css({ "border": "1px solid green" });
+
+  // To target the div that doesn't have a header inside of them
+  // $("div:not(:has(:header))").css({ "border": "1px solid green" });
+
 
 
   // ------------- 11.  -------------
