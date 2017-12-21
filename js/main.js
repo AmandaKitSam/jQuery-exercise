@@ -247,7 +247,10 @@ $(document).ready(function() {
   $("li ul#math_subjects").append(newCourse);
 
   // the use of .prepend(selector)
+  // $("li ul#math_subjects").prepend(newCourse);
 
+  // the use of .after(selector)
+  // $("li ul#math_subjects").after(newCourse);
 
 
 
