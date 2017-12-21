@@ -189,15 +189,20 @@ $(document).ready(function() {
 
   // the use of asterisk equals *= (substring chars appear in)
   // To target that contain the id of 'closing'
-  $("[id*='closing']").css({ "border": "1px solid green" });
+  // $("[id*='closing']").css({ "border": "1px solid green" });
 
   // the use of :has(selector)
   // To target div that has <p>
   // $("div:has(p)").css({ "border": "1px solid green" });
+  // To target div that has header
+  // $("div:has(:header)").css({ "border": "1px solid green" });
 
   // To target all headers on the page
-  $(":header").css({ "border": "1px solid green" });
+  // $(":header").css({ "border": "1px solid green" });
 
+  // the use of :not(selector) - going to be negated
+  // To target the li class name is not 'important'
+  $("li:not(.important)").css({ "border": "1px solid green" });
 
 
   // ------------- 11.  -------------
