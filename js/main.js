@@ -243,8 +243,14 @@ $(document).ready(function() {
   // the use of .append(selector)
   $("li ul#math_subjects").append("<li style='border: 1px solid green;'>New Course</li>");
 
-  const newCourse = $("<li style='border: 1px solid red;'>Coding</li>");
-  // $("li ul#math_subjects").append(newCourse);
+  const newCourse = $("<li style='border: 1px solid blue;'>Coding</li>");
+  const newCourse2 = "<li style='border: 1px solid #00baff;'>Design</li>";
+  $("li ul#math_subjects").append(newCourse);
+  $("li ul#math_subjects").append(newCourse);
+  $("li ul#math_subjects").append(newCourse);
+  $("li ul#math_subjects").append(newCourse2);
+  $("li ul#math_subjects").append(newCourse2);
+  $("li ul#math_subjects").append(newCourse2);
 
   // the use of .prepend(selector)
   // $("li ul#math_subjects").prepend(newCourse);
@@ -253,7 +259,7 @@ $(document).ready(function() {
   // $("li ul#math_subjects").after(newCourse);
 
   // the use of .before(selector)
-  $("li ul#math_subjects").before(newCourse);
+  // $("li ul#math_subjects").before(newCourse);
 
 
 
