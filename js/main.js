@@ -173,8 +173,15 @@ $(document).ready(function() {
 
   // the use of !=
   // To target the class name of <p> that is not instruct_title
-  $("p[class!='instruct_title']").css({ "border": "1px solid green" });
+  // $("p[class!='instruct_title']").css({ "border": "1px solid green" });
 
+  // the carrot equal to ^= (starts with)
+  // To target the class name that is start with 'imp'
+  // $("[class^='imp']").css({ "border": "1px solid green" });
+
+  // the use of $= (ends with)
+  // To target the class name that is end with 'ant'
+  $("[class^='imp']").css({ "border": "1px solid green" });
 
 
   // ------------- 11.  -------------
