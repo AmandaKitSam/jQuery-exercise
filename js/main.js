@@ -191,6 +191,13 @@ $(document).ready(function() {
   // To target that contain the id of 'closing'
   $("[id*='closing']").css({ "border": "1px solid green" });
 
+  // the use of :has(selector)
+  // To target div that has <p>
+  // $("div:has(p)").css({ "border": "1px solid green" });
+
+  // To target all headers on the page
+  $(":header").css({ "border": "1px solid green" });
+
 
 
   // ------------- 11.  -------------
