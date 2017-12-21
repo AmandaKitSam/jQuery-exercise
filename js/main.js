@@ -223,8 +223,14 @@ $(document).ready(function() {
   // $("#courses").children("li").last().css({ "border": "1px solid green" });
 
   // the use of .parent(selector) and .parents(selector) -> which includes body and html
-  $("#courses").children("li").children().parent().css({ "border": "1px solid green" });
+  // $("#courses").children("li").children().parent().css({ "border": "1px solid green" });
   // $("#courses").children("li").children().parents().css({ "border": "1px solid green" });
+
+  // Walking the DOM
+  // the use of .next(selector) and .prev(selector)
+  // $("#courses").children("li").css({ "border": "1px solid green" });
+  // $("#courses").children("li").next().css({ "border": "1px solid green" });
+  $("#courses").children("li").prev().css({ "border": "1px solid green" });
 
 
 
