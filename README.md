@@ -1,4 +1,4 @@
-# jQuery Exercise
+# jQuery Exercise :star: :star: :star: :star: :star:
 
 ## By Amanda Sam
 
@@ -14,7 +14,7 @@
 
 - Form Events & Variables
 
-- Inline Styling & the use of ```this```
+- Inline Styling & the use of `this`
 
 - Selection & Attribute Modification
 
