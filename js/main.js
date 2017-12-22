@@ -356,13 +356,19 @@ $(document).ready(function() {
 
   // var root = "https://jsonplaceholder.typicode.com/posts/1";
   // var root = "https://jsonplaceholder.typicode.com/comments";
-  // var url = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/sample_table.html"
 
+  // Example 1.
   $(".btn_ajax").on("click", function() {
-    let url = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/some_random_text.txt";
+    const url = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/some_random_text.txt";
     $("div.main_ajax").load(url);
   });
 
+  // Example 2.
+  $(".btn_ajax2").on("click", function() {
+    // const url2 = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/sample_table.html";
+    const url2 = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/sample_table.html table fieldset:first";
+    $("div.main_ajax2").load(url2);
+  });
 
 
 
