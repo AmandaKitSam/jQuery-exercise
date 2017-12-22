@@ -357,21 +357,37 @@ $(document).ready(function() {
   // var root = "https://jsonplaceholder.typicode.com/posts/1";
   // var root = "https://jsonplaceholder.typicode.com/comments";
 
-  // Example 1.
+  // Example 1
   $(".btn_ajax").on("click", function() {
     const url = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/some_random_text.txt";
     $("div.main_ajax").load(url);
   });
 
-  // Example 2.
+  // Example 2 - .load() and $.ajax
   $(".btn_ajax2").on("click", function() {
-    // const url2 = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/sample_table.html";
-    const url2 = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/sample_table.html table fieldset:first";
-    $("div.main_ajax2").load(url2);
+    // const url2 = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/sample_table.html table fieldset:first";
+    // $("div.main_ajax2").load(url2);
+
+    const url2 = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/sample_table.html";
+
+    $.ajax(url2, {
+      dataType: "html",
+      method: 'GET',
+      success: function(response) {
+        $("div.main_ajax2").html(response);
+      }
+    });
   });
 
-  // Example 3. $.ajax(url [,options])
   // Callback Functions
+  $(".btn_ajax3").on("click", function() {
+    $(".image_sql").fadeToggle(3000, function() {
+      $(".btn_ajax3").text("Show Image");
+    }); // fadeToggle
+  });
+
+  // Example 3 - $.ajax(url [,options])
+
 
 
 
