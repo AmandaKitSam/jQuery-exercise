@@ -283,7 +283,10 @@ $(document).ready(function() {
   // ----------------- 14. The Event Lifecycle -----------------
 
   // The use of .stopPropagation() - Prevent the event from bubbling back
-  $("button.see-details").on("click", function(event) {
+  // Event Delegation
+
+  // $("button.see-details").on("click", function(event) {
+  $("#books_div > .book").on("click", "button", function(event) {
     const price = $(this).closest(".book").data("price");
     const author = $(this).closest(".book").data("author");
     const details = $("<p> Price: " + price + "<br/>Author: <b>" + author + "</b> </p>" );
@@ -292,7 +295,6 @@ $(document).ready(function() {
     $(this).remove();
     event.stopPropagation();
 
-    // $("p.book-price, p.book-author").toggleClass("display_none");
     // $("p.book-price, p.book-author").removeClass("display_none");
     // $(this).hide();
   });
@@ -305,7 +307,26 @@ $(document).ready(function() {
     });
   });
 
-  // Event Delegation
+  // For the Already Completed Books
+  // $("button.see-details2").on("click", function(e) {
+  $("#books_completed > .book").on("click", "button", function(e) {
+    const purchased = $(this).closest(".book").data("purchased");
+    const author = $(this).closest(".book").data("author");
+    const rating = $(this).closest(".book").data("myrating");
+    const details = $(
+      "<p> Purchased: " + purchased +
+      "<br/>Author: <b>" + author +
+      "</b> <br/> My Rating: " + rating +
+      " <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i> " +
+      " <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i> " +
+      " <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i> " +
+      " <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i> " +
+      " <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i> " +
+      " </p>" );
+    $(this).after(details);
+    $(this).remove();
+    e.stopPropagation();
+  });
 
 
 
