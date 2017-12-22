@@ -356,8 +356,6 @@ $(document).ready(function() {
 
   // https://jsonplaceholder.typicode.com/
 
-  // var root = "https://jsonplaceholder.typicode.com/comments";
-
   // Example 1
   $(".btn_ajax").on("click", function() {
     const url = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/some_random_text.txt";
@@ -405,8 +403,8 @@ $(document).ready(function() {
         const userID = response.userId;
         const title = response.title;
 
-        const $info = $("<p></p>");
-        $info.text(`User ID is: ${userID}. And the title is "${title}".`).css({ "color": "#008215", "font-size": "19px", "margin-top": "15px" });
+        const $info = $("<h5></h5>");
+        $info.text(`User ID is: ${userID}. And the title is "${title}".`).css({ "color": "#008215", "margin-top": "15px" });
         $("div.main_ajax4").append($info);
       },
       error: function(request, errorType, errorMsg) {
@@ -416,8 +414,28 @@ $(document).ready(function() {
   });
 
 
+  // Example 4 - $.get(url, success);
+  $(".btn_ajax5").on("click", function() {
+    const root2 = "https://jsonplaceholder.typicode.com/comments";
 
+    $.ajax(root2, {
+      dataType: "json",
+      method: "GET",
+      success: function(response) {
+        const postId = response[0].postId;
+        const email = response[0].email;
 
+        const $info = $("<h5></h5>");
+        $info.text(`Post ID is: ${postId}. And the email is "${email}".`).css({ "color": "#008215", "margin-top": "15px" });
+        $("div.main_ajax5").append($info);
+        console.log(response);
+      },
+      error: function(request, errorType, errorMsg) {
+        $("div.main_ajax5").text("There is an error. Check console for more info").css({ "color": "red", "font-size": "18px" });
+      },
+      data: { "postId": 1 }
+    });
+  });
 
 
 

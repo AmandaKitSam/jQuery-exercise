@@ -26,7 +26,7 @@
 
 - DOM Manipulation
 
-3. Advanced Event Handling and AJAX
+3. Advanced Event Handling and AJAX :white_check_mark:
 
 - Understand the Event Lifecycle
 
