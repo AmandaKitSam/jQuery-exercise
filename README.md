@@ -30,7 +30,7 @@
 
 - Understand the Event Lifecycle
 
-- Implementing AJAX
+- Implementing AJAX and Callback Functions
 
 ---
 Please visit the demo at: https://amandakitsam.github.io/jQuery-exercise/

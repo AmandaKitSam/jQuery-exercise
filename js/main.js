@@ -370,6 +370,9 @@ $(document).ready(function() {
     $("div.main_ajax2").load(url2);
   });
 
+  // Example 3. $.ajax(url [,options])
+  // Callback Functions
+
 
 
 
