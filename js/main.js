@@ -245,14 +245,14 @@ $(document).ready(function() {
   // ------------------------ 13. DOM Manipulation ------------------------
 
   // The use of .append(selector)
-  $("li ul#math_subjects").append("<li style='border: 1px solid green;'>New Course</li>");
+  $("li ul#math_subjects").append("<li class='list-group-item' style='border: 1px solid green;'>New Course</li>");
 
   // $() - contain a DOM element
-  const $newCourse = $("<li style='border: 1px solid blue;'>Coding</li>");
-  const newCourse2 = "<li style='border: 1px solid #00baff;'>Design</li>";
+  const $newCourse = $("<li class='list-group-item' style='border: 1px solid blue;'>Data Analyst</li>");
+  const newCourse2 = "<li class='list-group-item' style='border: 1px solid #00baff;'>Quick Calculate</li>";
   $("li ul#math_subjects").parent().append( $newCourse );
-  $("li ul#math_subjects").parent().append( $newCourse );
-  $("li ul#math_subjects").parent().append( newCourse2 );
+  // $("li ul#math_subjects").parent().append( $newCourse );
+  // $("li ul#math_subjects").parent().append( newCourse2 );
   $("li ul#math_subjects").parent().append( newCourse2 );
 
   $("li ul#math_subjects").parent().append( $newCourse );
@@ -278,13 +278,13 @@ $(document).ready(function() {
   // $("#science_subjects").remove();
 
 
-  // --- Handle Event Bubbling During DOM Manipulation ---
+  // -------- Handle Event Bubbling During DOM Manipulation --------
   // Add a course to the list by enter the data from input
   let enteredCourse;
 
   $("#btn_1").on("click", function() {
     enteredCourse = $("input.entered-word").val();
-    console.log(enteredCourse);
+    // console.log(enteredCourse);
     $("#statement").find("h3").text("You have entered: " + enteredCourse);
     $("#statement").css({
       "background-color": "#abffb8",
@@ -293,8 +293,12 @@ $(document).ready(function() {
     });
   });
 
-
-
+  $(".main-course").on("click", function(e) {
+    let $liNew = $("<li class='list-group-item'>" + enteredCourse + "</li>");
+    $liNew.css({ "background-color": "#fbffab" });
+    $(this).append($liNew);
+    e.stopPropagation();
+  });
 
 
 
@@ -359,17 +363,12 @@ $(document).ready(function() {
     $("h4#statement").delay(1000).slideDown(1000);
   });
 
-  // $("form").on("submit", function(){
-  //   var enterChat = $("input#entered_chat").val();
-  //   alert(enterChat);
-  // });
-
   // The user enters the message and presses send button. The conversation ballon is updated with the message.
   // After 3 seconds, Mary replies with the message
   $("button#send_chat").on("click", function(){
     var enterChat = $("input#entered_chat").val();
     // console.log(enterChat);
-    // $("h4#user-statement").val(enterChat);
+
     $('<h4 style="font-size: 18px">Nicholas: "' + enterChat + '"</h4>').appendTo("h4#user-statement");
     $("#mary-reply").delay(3000).slideDown(1000);
   });
