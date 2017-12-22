@@ -278,6 +278,25 @@ $(document).ready(function() {
   // $("#science_subjects").remove();
 
 
+  // --- Handle Event Bubbling During DOM Manipulation ---
+  // Add a course to the list by enter the data from input
+  let enteredCourse;
+
+  $("#btn_1").on("click", function() {
+    enteredCourse = $("input.entered-word").val();
+    console.log(enteredCourse);
+    $("#statement").find("h3").text("You have entered: " + enteredCourse);
+    $("#statement").css({
+      "background-color": "#abffb8",
+      "margin": "10px 0",
+      "padding": "10px"
+    });
+  });
+
+
+
+
+
 
   // ----------------- 14. The Event Lifecycle -----------------
 
