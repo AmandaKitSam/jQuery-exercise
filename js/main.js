@@ -354,7 +354,8 @@ $(document).ready(function() {
 
   // ----------------- 16. Implementing AJAX -----------------
 
-  // var root = "https://jsonplaceholder.typicode.com/posts/1";
+  // https://jsonplaceholder.typicode.com/
+
   // var root = "https://jsonplaceholder.typicode.com/comments";
 
   // Example 1
@@ -362,6 +363,7 @@ $(document).ready(function() {
     const url = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/some_random_text.txt";
     $("div.main_ajax").load(url);
   });
+
 
   // Example 2 - .load() and $.ajax
   $(".btn_ajax2").on("click", function() {
@@ -372,7 +374,7 @@ $(document).ready(function() {
 
     $.ajax(url2, {
       dataType: "html",
-      method: 'GET',
+      method: "GET",
       success: function(response) {
         $("div.main_ajax2").html(response);
       },
@@ -382,6 +384,7 @@ $(document).ready(function() {
     });
   });
 
+
   // Callback Functions
   $(".btn_ajax3").on("click", function() {
     $(".image_sql").fadeToggle(3000, function() {
@@ -389,7 +392,28 @@ $(document).ready(function() {
     }); // fadeToggle
   });
 
+
   // Example 3 - $.ajax(url [,options])
+  $(".btn_ajax4").on("click", function() {
+    const root = "https://jsonplaceholder.typicode.com/posts/1";
+
+    $.ajax(root, {
+      dataType: "json",
+      method: "GET",
+      success: function(response) {
+        // console.log(response);
+        const userID = response.userId;
+        const title = response.title;
+
+        const $info = $("<p></p>");
+        $info.text(`User ID is: ${userID}. And the title is "${title}".`).css({ "color": "#008215", "font-size": "19px", "margin-top": "15px" });
+        $("div.main_ajax4").append($info);
+      },
+      error: function(request, errorType, errorMsg) {
+        $("div.main_ajax4").text("There is an error. Check console for more info").css({ "color": "red", "font-size": "18px" });
+      }
+    });
+  });
 
 
 
