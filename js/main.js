@@ -375,6 +375,9 @@ $(document).ready(function() {
       method: 'GET',
       success: function(response) {
         $("div.main_ajax2").html(response);
+      },
+      error: function(request, errorType, errorMsg) {
+        $("div.main_ajax2").text("There is an error. Check console for more info").css({ "color": "red", "font-size": "18px" });
       }
     });
   });
