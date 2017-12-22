@@ -352,6 +352,19 @@ $(document).ready(function() {
 
 
 
+  // ----------------- 16. Implementing AJAX -----------------
+
+  // var root = "https://jsonplaceholder.typicode.com/posts/1";
+  // var root = "https://jsonplaceholder.typicode.com/comments";
+  // var url = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/sample_table.html"
+
+  $(".btn_ajax").on("click", function() {
+    let url = "https://raw.githubusercontent.com/imtiazahmad007/resources/master/some_random_text.txt";
+    $("div.main_ajax").load(url);
+  });
+
+
+
 
 
 

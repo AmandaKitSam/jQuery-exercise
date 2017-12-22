@@ -26,9 +26,11 @@
 
 - DOM Manipulation
 
-3. Advanced Event Handling and Ajax
+3. Advanced Event Handling and AJAX
 
 - Understand the Event Lifecycle
 
+- Implementing AJAX
+
 ---
-Please visit the website at: https://amandakitsam.github.io/jQuery-exercise/
+Please visit the demo at: https://amandakitsam.github.io/jQuery-exercise/
