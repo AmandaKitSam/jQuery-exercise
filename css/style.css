@@ -23,6 +23,18 @@ h2 {
   border-radius: 10px;
 }
 
+.icon-green {
+  color: #00d160;
+}
+
+.icon-blue {
+  color: #3113c4;
+}
+
+.icon-red {
+  color: #ff4e4f;
+}
+
 
 /*-------------------------------- Intro --------------------------------*/
 .intro-click-red {
@@ -137,6 +149,7 @@ th {
   border-radius: 20px;
   box-shadow: 0 10px 10px #494949;
   padding: 50px 80px;
+  margin-left: 10px;
 }
 
 .title{

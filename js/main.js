@@ -251,8 +251,6 @@ $(document).ready(function() {
   const newCourse2 = "<li style='border: 1px solid #00baff;'>Design</li>";
   $("li ul#math_subjects").parent().append( $newCourse );
   $("li ul#math_subjects").parent().append( $newCourse );
-  $("li ul#math_subjects").parent().append( $newCourse );
-  $("li ul#math_subjects").parent().append( newCourse2 );
   $("li ul#math_subjects").parent().append( newCourse2 );
   $("li ul#math_subjects").parent().append( newCourse2 );
 
@@ -283,7 +281,7 @@ $(document).ready(function() {
   // ----------------- 14. The Event Lifecycle -----------------
 
   // The use of .stopPropagation() - Prevent the event from bubbling back
-  // Event Delegation
+  // Event Delegation - eg. button within the <div>
 
   // $("button.see-details").on("click", function(event) {
   $("#books_div > .book").on("click", "button", function(event) {
@@ -291,7 +289,7 @@ $(document).ready(function() {
     const author = $(this).closest(".book").data("author");
     const details = $("<p> Price: " + price + "<br/>Author: <b>" + author + "</b> </p>" );
     $(this).after(details);
-    $(this).closest(".book").css({ "background-color": "rgba(83, 255, 141, 0.5)" });
+    $(this).closest(".book").css({ "background-color": "rgba(153, 255, 187, 0.5)" });
     $(this).remove();
     event.stopPropagation();
 
@@ -302,7 +300,7 @@ $(document).ready(function() {
   // Click the <div>, CSS changed, doesn't effect the button
   $("div.book").on("click", function() {
     $(this).css({
-      "background-color": "rgba(154, 114, 251, 0.5)",
+      "background-color": "rgba(202, 180, 254, 0.5)",
       "border": "1.5px solid rgba(154, 114, 251, 0.5)"
     });
   });
