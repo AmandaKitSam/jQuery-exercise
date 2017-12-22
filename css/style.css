@@ -139,6 +139,10 @@ th {
   background-color: purple;
   color: white;
 }
+/* button */
+.add-course {
+  margin: 15px 0;
+}
 
 
 

@@ -193,30 +193,38 @@
             <br/>
 
             <h2>Course Catelog</h2>
-            <h3>Below is a list of course offerings to choose from</h3>
+            <h5>Add the course that is ready for this year:</h5>
+
+            <div id="course_name">
+              <input type="textbox" class="form-control entered-word" placeholder="Enter the course name"></input>
+              <button id="btn_1" class="btn btn-outline-success add-course">Add Course</button>
+            </div>
+            <div id="statement">
+              <h3></h3>
+            </div>
+
             <div>
-              <p>Below is a list of all the available courses <br>
-              that can be enrolled in this semester:
-              </p>
+              <h5>Below is a list of all the available courses that can be enrolled in this semester:
+              </h5>
             </div>
             <ul id="courses">
-              <li>Sociology</li>
-              <li>Psychology</li>
-              <li>Mathematics
+              <li class="main-course">Sociology</li>
+              <li class="main-course">Psychology</li>
+              <li class="main-course">Mathematics
                 <ul id="math_subjects">
-                  <li>Algebra</li>
-                  <li>Geometry</li>
-                  <li>Calculus</li>
+                  <li class="main-course">Algebra</li>
+                  <li class="main-course">Geometry</li>
+                  <li class="main-course">Calculus</li>
                 </ul>
               </li>
-              <li>Sciences
+              <li class="main-course">Sciences
                 <ul id="science_subjects">
-                  <li>Geology</li>
-                  <li>Physics</li>
-                  <li>Chemistry</li>
+                  <li class="main-course">Geology</li>
+                  <li class="main-course">Physics</li>
+                  <li class="main-course">Chemistry</li>
                 </ul>
               </li>
-              <li>World History</li>
+              <li class="main-course">World History</li>
             </ul>
 
           </div>

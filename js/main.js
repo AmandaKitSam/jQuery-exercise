@@ -247,6 +247,7 @@ $(document).ready(function() {
   // The use of .append(selector)
   $("li ul#math_subjects").append("<li style='border: 1px solid green;'>New Course</li>");
 
+  // $() - contain a DOM element
   const $newCourse = $("<li style='border: 1px solid blue;'>Coding</li>");
   const newCourse2 = "<li style='border: 1px solid #00baff;'>Design</li>";
   $("li ul#math_subjects").parent().append( $newCourse );
