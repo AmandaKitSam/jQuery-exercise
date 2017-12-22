@@ -336,15 +336,15 @@ $(document).ready(function() {
     const author = $(this).closest(".book").data("author");
     const rating = $(this).closest(".book").data("myrating");
     const details = $(
-      "<p> Purchased: " + purchased +
-      "<br/>Author: <b>" + author +
-      "</b> <br/> My Rating: " + rating +
-      " <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i> " +
-      " <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i> " +
-      " <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i> " +
-      " <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i> " +
-      " <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i> " +
-      " </p>" );
+      `<p> Purchased: ${purchased}
+      <br/>Author: <b> ${author}
+      </b> <br/> My Rating: ${rating}
+      <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i>
+      <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i>
+      <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i>
+      <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i>
+      <i class='fa fa-star' aria-hidden='true' style='color: #e4b200;'></i>
+      </p>` );
     $(this).after(details);
     $(this).remove();
     e.stopPropagation();
