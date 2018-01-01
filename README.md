@@ -33,4 +33,4 @@
 - Implementing AJAX and Callback Functions
 
 ---
-Please visit the demo at: https://amandakitsam.github.io/jQuery-exercise/
+Check out the demo here: https://amandakitsam.github.io/jQuery-exercise/
