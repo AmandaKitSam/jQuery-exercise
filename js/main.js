@@ -61,7 +61,7 @@ $(document).ready(function() {
   //   console.log(enterWord);
   //   $('<h4>You have entered:' + enterWord + '</h4>').appendTo("div #text_after_submit");
   // });
-  // (I DONT KNOW WHY ITS NOT WORKING)
+
 
   // (Submit event works for forms)
   $("form").on("submit", function(){
